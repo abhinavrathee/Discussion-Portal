@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rathee's Discussion Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rathee's Discussion Portal</h1>
+    </header>
+    <main>
+        <div id="left-pane">
+            <div class="controls">
+                <button id="new-question-btn">New Question form</button>
+                <input type="text" id="search-input" placeholder="Search questions...">
+            </div>
+            <div id="question-list"></div>
+        </div>
+        <div id="right-pane">
+            <div id="welcome-section">
+                <h2>Welcome to Rathee's Discussion Portal !</h2>
+                <p>Enter a subject and question to get started</p>
+                <form id="question-form">
+                    <input type="text" id="subject-input" placeholder="Subject" required>
+                    <textarea id="question-input" placeholder="Question" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="question-detail" style="display: none;">
+                <h2>Question</h2>
+                <div id="question-content"></div>
+                <button id="resolve-btn">Resolve</button>
+                <h3>Response</h3>
+                <div id="responses"></div>
+                <h3>Add Response</h3>
+                <form id="response-form">
+                    <input type="text" id="name-input" placeholder="Enter Name" required>
+                    <textarea id="comment-input" placeholder="Enter Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
